@@ -7,12 +7,13 @@ class TrainTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
-     *
+     * 
      * @return void
      */
     public function run(Faker $faker)
     {
         for($i=0; $i < 10; $i++){
+              
             $new_train = new Train();
             $new_train->id = $faker->ean8();
             $new_train->company = $faker->word();

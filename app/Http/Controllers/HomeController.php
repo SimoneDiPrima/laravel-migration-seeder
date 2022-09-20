@@ -7,7 +7,7 @@ use App\Models\Train;
 class HomeController extends Controller
 {
     public function index(){
-        $trains = [];
+        $trains = Train::all();
         return view('trains.index',compact('trains'));
     }
 }
